@@ -76,3 +76,19 @@ function shuffle(){
 //// e che possa essere messa in ordine per nome o anno di pubblicazione
 
 //2) Capitoli 13 / 14 di eloquent js
+
+
+
+
+
+
+
+///for
+
+//1) creo un div per la card
+//2) creo lo span del nome
+//3) creo il node del nome
+//4) metto il node del nome dentro lo span del nome
+//5) metto lo span del nome dentro al div
+//6) creo lo span del cognome
+///...
