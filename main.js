@@ -46,23 +46,28 @@ function renderPage(members){
             mainContainer.appendChild(h3Element);
         }
 
-        const student = class1.studentsArray[i]
+        const student = class1.studentsArray[i];
+
+        const cardDiv = document.createElement('div');
+        cardDiv.classList.add('student-p')
         
-        const pElement = document.createElement('p');
+        const pElement = createPWithProperty(student.name, 'Name')
+        cardDiv.appendChild(pElement)
 
-        pElement.classList.add('student-p')
+        cardDiv.appendChild(createPWithProperty(student.surname, 'Cognome'))
 
-        const textNode = document.createTextNode(student.toString());
-
-        pElement.appendChild(textNode);
-
-        mainContainer.appendChild(pElement);
+        mainContainer.appendChild(cardDiv);
     }
+}
 
+function createPWithProperty(prop, label){
+    const pElement = document.createElement('p');
+    const textNode = document.createTextNode(label + ': ' + prop);
+    pElement.appendChild(textNode);
+    return pElement;
 }
 
 renderPage(3);
-
 
 function shuffle(){
     console.log('sto rimescolando');
