@@ -9,7 +9,7 @@ const s8 = new Student("francesca", "ercolani");
 const s9 = new Student("stefano", "florio");
 const s10 = new Student("bryan", "rojas");
 
-const class1 = new Classroom([s1,s2,s3,s4,s5,s6,s7,s8,s9]);
+const class1 = new Classroom([s1,s2,s3,s4,s5,s6,s7,s8,s9,s10]);
 
 
 // console.log(document);
@@ -67,12 +67,12 @@ function createPWithProperty(prop, label){
     return pElement;
 }
 
-renderPage(3);
+renderPage(2);
 
 function shuffle(){
     console.log('sto rimescolando');
     class1.shuffleStudents();
-    renderPage(3);
+    renderPage(2);
 }
 
 
